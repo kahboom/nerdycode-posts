@@ -9,3 +9,12 @@ tags:
   - kafka
 ---
 
+Today we're gonna learn Apache Kafka together.
+
+First and foremost, some key concepts:
+
+A Kafka broker is 
+
+Kafka clusters usually consist of several brokers.
+
+

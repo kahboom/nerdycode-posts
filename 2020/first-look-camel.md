@@ -12,6 +12,7 @@ references:
 tags:
   - camel
   - integration
+  - java
 ---
 
 The world is becoming increasingly interconnected through a variety of data sources that often need to communicate with one another. These data sources can be anything from a web service such as Dropbox or Twitter, to a database or message broker like Apache Kafka. Sometimes we need to move data between these services, and sometimes we need to make changes to the data mid-way.

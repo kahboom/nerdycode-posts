@@ -7,6 +7,8 @@ dynamicPermalink: false
 layout: post.njk
 tags:
   - camel-k
+  - integration
+  - java
 ---
 
 
