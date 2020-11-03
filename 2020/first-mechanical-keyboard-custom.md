@@ -1,5 +1,5 @@
 ---
-title: My First Mechanical Keyboard Build!
+title: My First Mechanical Keyboard Build
 eleventyExcludeFromCollections: false
 date: 2020-09-25
 permalink: "/first-mechanical-keyboard-custom-build/"
