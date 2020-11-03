@@ -37,7 +37,7 @@ For lubing the switches and stabs (stabilizers):
 - <a href="https://kbdfans.com/products/kbdfans-switches-lube-station" target="_blank" rel="nofollow">Switches lube station</a>
 - <a href="https://keygem.store/products/switch-stem-holder-v2?variant=34907654062246" target="_blank" rel="nofollow">Switch stem holder</a>
 - A small, narrow brush like <a href="https://keygem.store/collections/tools/products/premium-brush-size-0" target="_blank" rel="nofollow">this one</a>
-- <a href="https://kbdfans.com/products/gb-2-in-1-machined-aluminum-switch-opener" rel="nofollow" target"_blank">KBDfans aluminum switch opener</a>
+- <a href="https://kbdfans.com/products/gb-2-in-1-machined-aluminum-switch-opener" rel="nofollow" target="_blank">KBDfans aluminum switch opener</a>
 
 You don't really need the lubing station, stem holder, or switch opener if you're on a budget. Technically, you don't need to lube your switches at all. If you did want to lube them at some point, though, if you are soldering, you will (generally) need to do it before you solder.
 
