@@ -52,7 +52,7 @@ So, before you start, you want to make sure that your PCB actually works. That w
 
 Just plug it into your computer and grab some eyebrow tweezers with metal tips. Next, go to a Keyboard Tester (<a href="https://keyboardchecker.com/" rel="nofollow" target="_blank">here</a> <a href="http://en.key-test.ru/" target="_blank" rel="nofollow">are</a> a <a href="https://www.keyboardtester.com/" target="_blank" rel="nofollow">few</a>). Touch the two metal ends of the tweezers onto each of the switch pads on the PCB, and it should register that key in the app. Do this for every single key. In my case, I also wanted to see that the underglow just worked when I plugged it into my laptop.
 
-![](/img/post/custom-keyboard-underglow-01.png)
+![Underglow PCB](/img/post/custom-keyboard-underglow-01.jpg)
 
 When you're done, just set it aside.
 
@@ -62,9 +62,9 @@ This step is entirely optional, but I *highly* recommend taking the time to do i
 
 I used a lubing station I bought from KBDfans, but this is completely unnecessary. You can simply open the switches and separate the parts into piles as you go lubing and reassembling them.
 
-![](/img/post/custom-keyboard-lubing-01.jpg)
+![KBDfans Lubing Station](/img/post/custom-keyboard-lubing-01.jpg)
 
-![](/img/post/custom-keyboard-lubing-02.jpg)
+![KBDfans Lubing Station](/img/post/custom-keyboard-lubing-02.jpg)
 
 All in all, this took about four hours, lots of patience, and many beers. Switch and Click have an excellent <a href="https://switchandclick.com/2020/06/06/the-ultimate-guide-lube-your-mechanical-keyboard-switches/" rel="nofollow" target="_blank">guide to lubing your switches</a>, which I highly recommend you read. The important thing to remember when lubing your switches is that LESS IS MORE.
 
@@ -74,9 +74,9 @@ Personally, I like to lube the springs as well, but doing that manually would ta
 
 Once you've finished lubing everything, the next step is to install stabilizers. The process for this is going to vary depending on what kind of stabilizer you have (e.g. plate-mounted), but generally takes about five to ten minutes to do. I recommend watching a YouTube video for installing the specific type of stabilizer you have. Cherry are the most common, and from those there are three types: plate-mounted, PCB-mounted screw-in, PCB-mounted snap-on. Mine are Durock PCB-mounted screw-in, which you just screw onto the PCB.
 
-![](/img/post/custom-keyboard-pcb-stabilizers-01.jpg)
+![Durock Screw-in Stabilizers](/img/post/custom-keyboard-pcb-stabilizers-01.jpg)
 
-![](/img/post/custom-keyboard-plate-01.jpg)
+![Durock Screw-in Stabilizers](/img/post/custom-keyboard-plate-01.jpg)
 
 ## Installing the Switches
 
@@ -86,7 +86,7 @@ Next, you install switches onto the plate and get it into the PCB. Be mindful of
 
 For the soldering, I used a Hakko FX-888D soldering station, which I found to be quite nice to work with. I'm a bit on the cautious side so I used a heat-resistant soldering mat as well.
 
-![](/img/post/custom-keyboard-pcb-solder-01.jpg)
+![Soldering PCB](/img/post/custom-keyboard-pcb-solder-01.jpg)
 
 It's also a good idea to wear a mask and keep the room well-ventilated so that you don't inhale the fumes produced while soldering. You can solder outside as well if you don't have a fan to help with this. Basically, don't follow the setup I had. :)
 
@@ -94,11 +94,11 @@ It's also a good idea to wear a mask and keep the room well-ventilated so that y
 
 Once I was done soldering, it was time to assemble the rest of the keyboard. I added the foam to the bottom of the case, and placed the now-soldered PCB + plate + keycaps unit inside of it.
 
-![](/img/post/custom-keyboard-assembly-02.jpg)
+![Assembling Mechanical Keyboard](/img/post/custom-keyboard-assembly-02.jpg)
 
 I was so excited to use my new Norbauer keycaps, which arrived in a beautiful box and some 90s-themed accessories.
 
-![Norbauer 1992 After-School](/img/post/custom-keyboard-keycaps.jpg)
+![Norbauer 1992 After-School Keycaps](/img/post/custom-keyboard-keycaps.jpg)
 
 I thought I was done, and then I tested the keys.. which seemed to work just as before. It wasn't until I gave it a good few minutes of testing the keys that I realized a few of them were kind of sticking. I had no choice but to do the unthinkable.. I had to desolder a few of the switches. 😭
 
@@ -116,7 +116,7 @@ I also had some trouble when it came to assembling everything in the end. I had 
 
 ## The Final Product
 
-![](/img/post/custom-keyboard-final-01.jpg)
+![65% Acrylic Underglow Mechanical Keyboard](/img/post/custom-keyboard-final-01.jpg)
 
 After another few hours of desoldering and resoldering, the keys were super smooth! NovelKey Creams are probably one of my favorite types of switches, and I'm glad I took the risk of using a good switch for my first custom build.
 
