@@ -63,17 +63,14 @@ A brief overview of some key things to keep in mind as we write our tests:
 
 - Write and consistently review the requirements of your React app.
 - Realize that these tests are meant to simulate real user scenarios. Testing the visual aspects is often as important as the functionality the user expects.
-- Create [custom commands](https://docs.cypress.io/api/cypress-api/custom-commands.html#Syntax) to avoid code
- duplication and to keep tests clean. A good use case is for things like logging in.
+- Create [custom commands](https://docs.cypress.io/api/cypress-api/custom-commands.html#Syntax) to avoid code duplication and to keep tests clean. A good use case is for things like logging in.
 - Generally speaking, you should have less tests, but those tests should be relatively long, depending on the needs of your app.
 
 ### [](https://github.com/kahboom/dev-notes/blob/master/topics/react-testing.md#end-to-end-testing-with-cypress)Setting up Our React App with Cypress
 
 Let's go ahead and add Cypress to our app with `yarn add cypress --dev`.
 
-The command `node_modules/.bin/cypress open` will open the Cypress CLI (or dashboard) on your system, create a
- `cypress.json` file, and create a `cypress` directory in your app’s root directory, which is where your E2E tests
-  will live.
+The command `node_modules/.bin/cypress open` will open the Cypress CLI (or dashboard) on your system, create a `cypress.json` file, and create a `cypress` directory in your app’s root directory, which is where your E2E tests will live.
 
 You can also add the following script to your `package.json` to make it easier to run Cypress:
 
