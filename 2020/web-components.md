@@ -409,7 +409,7 @@ Probably the easiest way to make our host components easy for a consumer to use 
 }
 ``` 
 
-It then becomes easy to override these CSS variables from the consumer side, because all they would need to use is select the custom element name:
+It then becomes easy to override these CSS variables from the consumer side, because all they would need to do is select the custom element name:
 
 ```css
 my-counter {
