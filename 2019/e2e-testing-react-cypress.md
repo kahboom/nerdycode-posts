@@ -14,15 +14,15 @@ tags:
   - testing
 ---
 
-In this tutorial, we'll be setting up our React app with Cypress. Though not exclusive to React, [Cypress](https://www.cypress.io/) is a comprehensive, but lightweight E2E testing suite.
+In this tutorial, we'll be setting up our React app with Cypress. Though not exclusive to React, <a href="https://www.cypress.io/" rel="nofollow" target="_blank">Cypress</a> is a comprehensive, but lightweight E2E testing suite.
 
 I like Cypress because it runs in the browser, isn't bloat-y, and is easy to get started with. Since it runs in the browser, you can use browser dev tools to debug alongside your tests. It comes with a pretty cool UI, but if you wanted to run it in your terminal, that's possible too! The best part is that Cypress will create snapshots so that you can view these at a later time, should you choose to.
 
-Cypress is a pleasure to work with, but if it's not for you, you can also use [Selenium](https://www.seleniumhq.org/) and [Selenium WebDriver](https://www.seleniumhq.org/projects/webdriver/). Every project's requirements are different, so you should look into the role that E2E testing will play for you and your team. Don't forget to consider CD/CI and whether or not it is important for you to be able to integrate your E2E testing suite with it as well.
+Cypress is a pleasure to work with, but if it's not for you, you can also use <a href="https://www.seleniumhq.org/" rel="nofollow" target="_blank">Selenium</a> and <a href="https://www.seleniumhq.org/projects/webdriver/" rel="nofollow" target="_blank">Selenium WebDriver</a>. Every project's requirements are different, so you should look into the role that E2E testing will play for you and your team. Don't forget to consider CD/CI and whether or not it is important for you to be able to integrate your E2E testing suite with it as well.
 
 ## The Happy Path
 
-First things first. We need to write down our application requirements. If you work with a QE team in your company (or are part of it), you may have heard the phrase "happy path" once or twice. According to [Wikipedia](https://en.wikipedia.org/wiki/Happy_path):
+First things first. We need to write down our application requirements. If you work with a QE team in your company (or are part of it), you may have heard the phrase "happy path" once or twice. According to <a href="https://en.wikipedia.org/wiki/Happy_path" rel="nofollow" target="_blank">Wikipedia</a>:
 
 <article class="message is-info">
   <div class="message-body">
@@ -33,15 +33,13 @@ First things first. We need to write down our application requirements. If you w
 
 In addition to the happy path, you also need to consider the complete use case scenario, such that the user does not run into unexpected behavior as it stands. It's not about areas that you personally think could be improved, it's about both the functionality and appearance. It's about the _expectations_ of the user.
 
-Also, be sure to let your QE team know you are setting this up, so that your work doesn't overlap. They may already even have a "happy path" or even a list of use cases you can reference to write your tests.
+As a side note, be sure to let your QE team know you are setting this up (that is, if you're working with a QE team), so that your work doesn't overlap. They may already have a "happy path" or even a list of use cases you can reference to write your tests.
 
-Though it would be out of the scope of this article, one suggestion would be to use an executable specification tool like [Cucumber](https://cucumber.io/docs). This would allow for you to use something like Cypress in such a way that ensures you are focusing on the business goals and expected behavior of your app. Let me know if this is something you'd like for me to post about in the future.
+Though it would be out of the scope of this article, one suggestion could be to use an executable specification tool like <a href="https://cucumber.io/docs" rel="nofollow" target="_blank">Cucumber</a>. This would allow for you to use something like Cypress in such a way that ensures you are focusing on the business goals and expected behavior of your app.
 
 ## Breaking Down Our App's Use Cases
 
-Now we need to define the requirements for the user to not get annoyed when using our app---seriously, not a bad way to look at it.
-
-Suppose we have a game app that allows users to view a list of desserts, of which they are allowed to eat up to five.
+Next let's define the use cases for the user of our app. Suppose we have a game app that allows users to view a list of desserts, of which they are allowed to eat up to five.
 
 - Users should be able to login.
     - Upon logging in, they should see a list of desserts.
@@ -63,10 +61,10 @@ A brief overview of some key things to keep in mind as we write our tests:
 
 - Write and consistently review the requirements of your React app.
 - Realize that these tests are meant to simulate real user scenarios. Testing the visual aspects is often as important as the functionality the user expects.
-- Create [custom commands](https://docs.cypress.io/api/cypress-api/custom-commands.html#Syntax) to avoid code duplication and to keep tests clean. A good use case is for things like logging in.
+- Create <a href="https://docs.cypress.io/api/cypress-api/custom-commands.html#Syntax" rel="nofollow" target="_blank">custom commands</a> to avoid code duplication and to keep tests clean. A good use case is for things like logging in.
 - Generally speaking, you should have less tests, but those tests should be relatively long, depending on the needs of your app.
 
-### [](https://github.com/kahboom/dev-notes/blob/master/topics/react-testing.md#end-to-end-testing-with-cypress)Setting up Our React App with Cypress
+### Setting up Our React App with Cypress
 
 Let's go ahead and add Cypress to our app with `yarn add cypress --dev`.
 
@@ -92,19 +90,19 @@ When you first run Cypress, you'll notice it also provides a nice example test i
 
 Something I don't like about Cypress is that, as you can see, it creates an `integration` directory for your tests to live in by default. To me, this directory should be called something like, I don't know, maybe "tests"---anything but "integration."
 
-**In the world of JavaScript, E2E tests are** _**not**_ **the same as integration tests.** This may not be the case anywhere else, but it's helpful to understand that when working on the frontend. I'll leave some references articles below that discuss these points in greater detail. Either way, it's just a nitpick. :)
+**In the world of JavaScript, E2E tests are** _**not**_ **the same as integration tests.** This may not be the case anywhere else, but it's helpful to understand that when working on the frontend. I'll leave some references articles below that discuss these points in greater detail.
 
 ### Working with Data
 
-It's common that you'll need to interact with a server to determine some type of state, and the _usually_ comes in the form of some JSON data returned by an API. If you've written E2E tests before, you may be familiar with the concept and **setup** and **teardown** on a server (hopefully one specifically for testing). Cypress gives you a few options and alternatives.
+It's common that you'll need to interact with a server to determine some type of state, and that _usually_ comes in the form of some JSON data returned by an API. If you've written E2E tests before, you may be familiar with the concept and **setup** and **teardown** on a server (hopefully one specifically for testing). Cypress gives you a few options and alternatives.
 
 1. **You could continue to seed a database** using one of the following methods:
 
-- [`cy.exec()`](https://docs.cypress.io/api/commands/exec.html) - to run system commands
-- [`cy.task()`](https://docs.cypress.io/api/commands/task.html) - to run code in Node via the [`pluginsFile`](https://docs.cypress.io/guides/references/configuration.html#Folders-Files)
-- [`cy.request()`](https://docs.cypress.io/api/commands/request.html) - to make HTTP requests
+- <a href="https://docs.cypress.io/api/commands/exec.html" rel="nofollow" target="_blank">`cy.exec()`</a> - to run system commands
+- <a href="https://docs.cypress.io/api/commands/task.html" rel="nofollow" target="_blank">`cy.task()`</a> - to run code in Node via the <a href="https://docs.cypress.io/guides/references/configuration.html#Folders-Files" rel="nofollow" target="_blank">`pluginsFile`</a>
+- <a href="https://docs.cypress.io/api/commands/request.html" rel="nofollow" target="_blank">`cy.request()`</a> - to make HTTP requests
 
-If you need to load data and seed the application, it's likely you will probably want to use [fixtures](https://docs.cypress.io/api/commands/fixture.html#Notes) to accomplish that. You can set this up in the `beforeEach`, which runs before each test, as it implies:
+If you need to load data and seed the application, it's likely you will probably want to use <a href="https://docs.cypress.io/api/commands/fixture.html#Notes" rel="nofollow" target="_blank">fixtures</a> to accomplish that. You can set this up in the `beforeEach`, which runs before each test, as it implies:
 
 ```js
 beforeEach(function () {
@@ -123,7 +121,7 @@ If you need to stub calls to the API (for instance, for form submission), you ca
 
 ## Writing Our Tests
 
-If there is one thing I want for you to take away from this article, it's that **you should never login before each test**. This is cost-prohibitive. Still, if your app does allow for users to login, it should be tested. Logging in can get quite complex, so you might want to read up on the different methods Cypress suggests [here](https://docs.cypress.io/guides/getting-started/testing-your-app.html#Logging-in) (there are several).
+If there is one thing I want for you to take away from this article, it's that **you should never login before each test**. This is cost-prohibitive. Still, if your app does allow for users to login, it should be tested. Logging in can get quite complex, so you might want to read up on the different methods Cypress suggests <a href="https://docs.cypress.io/guides/getting-started/testing-your-app.html#Logging-in" rel="nofollow" target="_blank">here</a> (there are several).
 
 Back to our app, here is a very basic example of a test:
 
@@ -156,7 +154,7 @@ Everything else can vary, such as whether or not you need to seed data, login, c
 
 ## Integrating with CircleCI
 
-E2E tests are most useful when they become part of the developer's workflow. If you use CircleCI, it's easy to integration Cypress using the [Cypress CircleCI Orb](https://docs.cypress.io/guides/guides/continuous-integration.html#CircleCI) configuration set. For more info, visit the repo [here](https://github.com/cypress-io/circleci-orb). A brief example provided by Cypress shows a simple `circle.yml` file with the following settings:
+E2E tests are most useful when they become part of the developer's workflow. If you use CircleCI, it's easy to integration Cypress using the <a href="https://docs.cypress.io/guides/guides/continuous-integration.html#CircleCI" target="_blank" rel="nofollow">Cypress CircleCI Orb</a> configuration set. For more info, visit the repo <a href="https://github.com/cypress-io/circleci-orb" rel="nofollow" target="_blank">here</a>. A brief example provided by Cypress shows a simple `circle.yml` file with the following settings:
 
 ```yml
 version: 2.1
@@ -176,4 +174,4 @@ workflows:
 
 E2E testing can be quite valuable in a project, just remember that quantity does not always equal quality. Always keep in mind the purpose of the tests you are writing, and let that guide you.
 
-Recently I wrote about [the testing pyramid and how to better balance the types of tests you wrote](https://www.nerdycode.com/testing-pyramid/), but overall you should find that you don't really need as many E2E tests as, say, [unit](https://www.nerdycode.com/unit-testing-react-guide/) or integration tests. There is a lot of material to cover in end-to-end testing that I couldn't touch upon here, but hopefully this was a useful introduction to testing your React app with Cypress. Stay focused on the bigger picture and you'll have a robust system of tests in no time.
+Recently I wrote about <a href="https://www.nerdycode.com/testing-pyramid/" target="_blank">the testing pyramid and how to better balance the types of tests you wrote</a>, but overall you should find that you don't really need as many E2E tests as, say, <a href="https://www.nerdycode.com/unit-testing-react-guide/" target="_blank">unit</a> or integration tests. There is a lot of material to cover in end-to-end testing that I couldn't touch upon here, but hopefully this was a useful introduction to testing your React app with Cypress. Stay focused on the bigger picture and you'll have a robust system of tests in no time.
