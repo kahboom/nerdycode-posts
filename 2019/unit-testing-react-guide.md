@@ -49,7 +49,7 @@ The React team actually <a href="https://reactjs.org/docs/test-utils.html" targe
 
 ### ReactTestUtils
 
-ReactTestUtils is a set of convenience utilities that are provided out-of-the-box by React, and they are meant to be used in combination with your testing framework. It is recommended that you use ReactTestUtils alongside jest-dom, which is a companion library for React Testing Library. jest-dom provides custom DOM element matches for Jest (e.g. toBeVisible).
+<a href="https://reactjs.org/docs/test-utils.html" target="_blank" rel="nofollow">ReactTestUtils</a> is a set of convenience utilities that are provided out-of-the-box by React, and they are meant to be used in combination with your testing framework. It is recommended that you use ReactTestUtils alongside jest-dom, which is a companion library for React Testing Library. jest-dom provides custom DOM element matches for Jest (e.g. `toBeVisible`).
 
 ## Jest & react-testing-library
 
@@ -123,7 +123,7 @@ Your test files should have one of the following extensions in order for Jest to
 
 Though I try my best to be impartial, I will say that React Testing Library makes you look at unit testing differently than most developers tend to. I think it's very common for developers to want to test the functionality of their code as opposed to testing from the perspective of the user.
 
-One can argue that testing from the user's perspective is what E2E testing is for, but it's not that straightforward. While unit tests are indeed meant to test the functionality, in the UI this translates to a more visual approach of functionality.
+One can argue that testing from the user's perspective is [what E2E testing is for](https://www.nerdycode.com/e2e-testing-react-cypress/), but it's not that straightforward. While unit tests are indeed meant to test the functionality, in the UI this translates to a more visual approach of functionality.
 
 Unit tests don't involve a happy path or focus on integrations, rather, just visual usability in terms of self-contained units (think buttons, forms rendering properly, etc). You'll probably find yourself writing a lot of smoke tests if you're doing it right.
 
