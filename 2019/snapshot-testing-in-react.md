@@ -27,7 +27,7 @@ Having said that, if you're set on snapshots, that's okay, too. As it turns out,
 
 Alright, so then what should we be using for these snapshot tests? [Jest](https://jestjs.io/docs/en/snapshot-testing.html) can create snapshot files for you OOTB. In addition, you may find that you want to convert your React components to pure JS objects so that you can then use them for your snapshot. For that, there's always [React Test Renderer](https://reactjs.org/docs/test-renderer.html), which does the job without using a browser or jsdom.
 
-Example of a component that renders hyperlinks, borrowed directly from the docs:
+Example of a component that renders hyperlinks (from the docs):
 
 ```js
 // Link.react.js
@@ -102,6 +102,6 @@ test('Link changes the class when hovered', () => {
 });
 ```
 
-When the test is run with `yarn test` or `jest`, a file gets created. Oh, snap! You just created your snapshot file. :) In this case, it'd be named something like `__tests__/__snapshots__/Link.react.test.js.snap`.
+When the test is run with `yarn test` or `jest`, a file gets created--your snapshot file. In this case, it'd be named something like `__tests__/__snapshots__/Link.react.test.js.snap`.
 
-So, in sum, snapshots can be both useful and fun to work with when you want fast, easy test coverage. As with anything else, just don't use them as a crutch. One of the biggest challenges in web development is knowing when to pick the right tool for the right job.
+In sum, snapshots can be both useful and fun to work with when you want fast, easy test coverage. As with anything else, don't use them as a crutch. One of the biggest challenges in web development is knowing when to pick the right tool for the right job.

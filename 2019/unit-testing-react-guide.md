@@ -134,11 +134,10 @@ Unit tests don't involve a happy path or focus on integrations, rather, just vis
 
 It may help to have these written on a post-it note when writing tests, as sometimes it's easy to lose sight of what to test as you jump from component to component.
 
-Similarly, when you're using things like `instance()` or `state()` in your tests, it might be an indication that you
-'re going about things the wrong way. These are things that the user has no idea about, nor should they. This brings us to the very important point that **you should not test implementation details**.
+Similarly, when you're using things like `instance()` or `state()` in your tests, it might be an indication that you're going about things the wrong way. These are things that the user has no idea about, nor should they. This brings us to the very important point that **you should not test implementation details**.
 
 While I love writing unit tests, if I'm being frank, good unit test writing is seen as a bit boring by many developers. In a way, I feel like it's the inherent nature of testing. It's more about taking pride in the fact that you have confidence in the code you are writing, and quality control is often associated with thorough, repetitive work. It's a beautiful thing in its own right. :)
 
-We can make some of that monotonous work a bit less so by using some of Jest's built-in [setup and teardown](https://jest-bot.github.io/jest/docs/setup-teardown.html) helper functions. A good way to use these, for instance, is for debugging a failing test by logging data, which you could do with `beforeEach`.
+We can make some of that monotonous work a bit less so by using some of Jest's built-in [setup and teardown](https://jest-bot.github.io/jest/docs/setup-teardown.html) helper functions. A good way to use these, for instance, is for debugging a failing test by logging data, which you could do wi/th/ `beforeEach`.
 
-In the following few posts, we'll talk about how to test specific things like React hooks, how integration tests compare to unit and E2E tests, and much more.
+It'll take some trial and error, but over time you'll learn what works for you and what doesn't. The important thing is that the test you write gives you confidence that your code works as expected, in terms of usability--and learning to write tests with this perspective will certainly take time. After all, test writing is a bit of an art, and practice makes perfect.

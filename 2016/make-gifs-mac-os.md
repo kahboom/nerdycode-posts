@@ -92,5 +92,4 @@ Here is the final result:
 
 ![Gif Tutorial: Rachel eating cheese](/img/post/animated-01-5.gif)
 
-This post is based on Jacob Samela’s post [here](http://jacobsalmela.com/make-animated-gifs-in-os-x-with-a-right-click/). The script presented there works fine, but evidently duplicates the photos included in the GIF, which
- resulted in a much larger GIF file.
+This post is based on Jacob Samela’s post [here](http://jacobsalmela.com/make-animated-gifs-in-os-x-with-a-right-click/). The script presented there works fine, but evidently duplicates the photos included in the GIF, which resulted in a much larger GIF file.
