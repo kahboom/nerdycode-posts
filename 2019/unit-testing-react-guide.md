@@ -1,6 +1,7 @@
 ---
 title: "A Guide to Unit Testing in React"
 date: "2019-06-27"
+updated: 2020-11-22
 layout: post.njk
 permalink: "/unit-testing-react-guide/"
 dynamicPermalink: false
