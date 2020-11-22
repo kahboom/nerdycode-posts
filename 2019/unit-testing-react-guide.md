@@ -19,7 +19,7 @@ As with many of my posts, this started out as a list of notes I've gathered and 
 
 ## What exactly are unit tests?
 
-Unit tests are exactly what they imply--small, self-contained units of code written to test other code you have written, ideally also small and self-contained. They're quite easy to debug because they're small and have very specific purposes. In React, we could say that [pure functions](https://reactjs.org/docs/components-and-props.html#props-are-read-only) are probably the easiest to test, because there are no side effects involved.
+Unit tests are exactly what they imply--small, self-contained units of code written to test other code you have written, ideally also small and self-contained. They're quite easy to debug because they're small and have very specific purposes. In React, we could say that <a href="https://reactjs.org/docs/components-and-props.html#props-are-read-only" rel="nofollow" target="_blank">pure functions</a> are probably the easiest to test, because there are no side effects involved.
 
 ## How many unit tests should I write?
 
@@ -31,31 +31,31 @@ The truth is that this is highly subjective, so let's start out with introducing
 
 ### Enzyme
 
-[Enzyme](https://github.com/airbnb/enzyme) is a testing framework that was created by Airbnb, with a focus on checking state and React props. The way that it works is that it returns React components in memory, or to the DOM. You may find that the API used for traversing the component tree is very similar to jQuery.
+<a href="https://github.com/airbnb/enzyme" rel="nofollow" target="_blank">Enzyme</a> is a testing framework that was created by Airbnb, with a focus on checking state and React props. The way that it works is that it returns React components in memory, or to the DOM. You may find that the API used for traversing the component tree is very similar to jQuery.
 
 ### Jest
 
-[Jest](https://jestjs.io/) is a testing framework that was created by Facebook. If you use create-react-app, you've probably heard of it before, as it includes it OOTB.
+<a href="https://jestjs.io/" target="_blank" rel="nofollow">Jest</a> is a testing framework that was created by Facebook. If you use create-react-app, you've probably heard of it before, as it includes it OOTB.
 
 ### Karma + Mocha
 
-Often used in tandem, this dynamic duo has been around for a while (relative to the rapidly changing world of JS), and is commonly used in other frameworks, like Angular. [Mocha](https://mochajs.org/) is the testing framework, while [Karma](https://karma-runner.github.io/latest/index.html) is the test runner.
+Often used in tandem, this dynamic duo has been around for a while (relative to the rapidly changing world of JS), and is commonly used in other frameworks, like Angular. <a href="https://mochajs.org/" rel="nofollow" target="_blank">Mocha</a> is the testing framework, while <a href="https://karma-runner.github.io/latest/index.html" rel="nofollow" target="_blank">Karma</a> is the test runner.
 
 ### react-testing-library
 
-[React Testing Library](https://github.com/testing-library/react-testing-library) was created as a kind of replacement for Enzyme, and is often used in conjunction with Jest (though this is not required). It's built on top of React DOM and React Test Utils (below) and focuses more on the DOM and what gets rendered, and is then able to interact with it. Instead of returning React components like Enzyme, it returns HTML elements. Using its API you are then able to use query functions for things like text content that is visible on the page, or even HTML data attributes.
+<a href="https://github.com/testing-library/react-testing-library" rel="nofollow" target="_blank">React Testing Library</a> was created as a kind of replacement for Enzyme, and is often used in conjunction with Jest (though this is not required). It's built on top of React DOM and React Test Utils (below) and focuses more on the DOM and what gets rendered, and is then able to interact with it. Instead of returning React components like Enzyme, it returns HTML elements. Using its API you are then able to use query functions for things like text content that is visible on the page, or even HTML data attributes.
 
-The React team actually _[recommends](https://reactjs.org/docs/test-utils.html)_ using React Testing Library, though it's apparent that Enzyme can provide a level of convenience that you and/or your team would have to decide is worth the tradeoff.
+The React team actually <a href="https://reactjs.org/docs/test-utils.html" target="_blank" rel="nofollow">recommends</a> using React Testing Library, though it's apparent that Enzyme can provide a level of convenience that you and/or your team would have to decide is worth the tradeoff.
 
 ### ReactTestUtils
 
-[ReactTestUtils](https://reactjs.org/docs/test-utils.html) is a set of convenience utilities that are provided out-of-the-box by React, and they are meant to be used in combination with your testing framework. It is recommended that you use ReactTestUtils alongside jest-dom, which is a companion library for React Testing Library. jest-dom provides custom DOM element matches for Jest (e.g. toBeVisible).
+ReactTestUtils is a set of convenience utilities that are provided out-of-the-box by React, and they are meant to be used in combination with your testing framework. It is recommended that you use ReactTestUtils alongside jest-dom, which is a companion library for React Testing Library. jest-dom provides custom DOM element matches for Jest (e.g. toBeVisible).
 
 ## Jest & react-testing-library
 
-You can run Jest directly from the command line like this: `jest my-test --notify --config=config.json`
+You can run Jest directly from the command line like this: `jest my-test --notify --config=config.json`
 
-Here is an example taken from [examples/react-testing-library](https://github.com/facebook/jest/tree/master/examples/react-testing-library) of a component for a simple checkbox that swaps between two labels:
+Here is a basic example of a component for a simple checkbox that swaps between two labels:
 
 ```js
 // CheckboxWithLabel.js
@@ -115,8 +115,7 @@ The test function is quite similar to other testing libraries, and accepts two p
 1. A message we define that describes the purpose of the test, and ultimately defines whether or not it passes.
 2. The second parameter is an arrow function that will contain our test
 
-Your test files should have one of the following extensions in order for Jest to find them: `test.tsx` or `test.js
-`. If they don't contain any JSX, it's also possible to use a `test.ts` extension.
+Your test files should have one of the following extensions in order for Jest to find them: `test.tsx` or `test.js`. If they don't contain any JSX, it's also possible to use a `test.ts` extension.
 
 ### Tips for Writing Unit Tests
 
@@ -139,6 +138,6 @@ Similarly, when you're using things like `instance()` or `state()` in your tests
 
 While I love writing unit tests, if I'm being frank, good unit test writing is seen as a bit boring by many developers. In a way, I feel like it's the inherent nature of testing. It's more about taking pride in the fact that you have confidence in the code you are writing, and quality control is often associated with thorough, repetitive work. It's a beautiful thing in its own right. :)
 
-We can make some of that monotonous work a bit less so by using some of Jest's built-in [setup and teardown](https://jest-bot.github.io/jest/docs/setup-teardown.html) helper functions. A good way to use these, for instance, is for debugging a failing test by logging data, which you could do wi/th/ `beforeEach`.
+We can make some of that monotonous work a bit less so by using some of Jest's built-in <a href="https://jest-bot.github.io/jest/docs/setup-teardown.html" rel="nofollow" target="_blank">setup and teardown</a> helper functions. A good way to use these, for instance, is for debugging a failing test by logging data, which you could do with `beforeEach`.
 
 It'll take some trial and error, but over time you'll learn what works for you and what doesn't. The important thing is that the test you write gives you confidence that your code works as expected, in terms of usability--and learning to write tests with this perspective will certainly take time. After all, test writing is a bit of an art, and practice makes perfect.
