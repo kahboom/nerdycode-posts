@@ -26,7 +26,7 @@ Microservices have exploded in popularity within the past five years or so, and 
 
 The definition of a microservice can vary from person to person, but the premise is quite simple--_an architectural style consisting of a collection of distinct, autonomous services, each responsible for a specific thing_.
 
-The difference between microservices and micro frontends is that micro frontends are specific to the user interface, and the result, from a user's perspective, is a _single_, composed user interface.
+The difference between microservices and micro frontends is that micro frontends are specific to the user interface. The result, from a user's perspective, is a _single_, composed user interface.
 
 But what exactly is it that caused the popularity of microservices in the first place? And can that help us better understand when and how to use micro frontends?
 
