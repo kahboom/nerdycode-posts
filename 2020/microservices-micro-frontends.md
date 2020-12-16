@@ -30,7 +30,7 @@ The difference between microservices and micro frontends is that micro frontends
 
 But what exactly is it that caused the popularity of microservices in the first place? And can that help us better understand when and how to use micro frontends?
 
-### The Evolution from Monoliths
+## The Evolution from Monoliths
 
 Though microservices have been around for a long time, it was really monolithic applications that used to take center stage. **Monolithic applications** (or, monoliths for short) are applications that are completely self-contained and independent from other software. They're built as a single unit.
 
@@ -38,7 +38,7 @@ Monoliths aren't as bad as people make them out to be, and many big organization
 
 The problem with monoliths is that people will tend to abuse them. Even with solid practices like following a modular structure and establishing boundaries around those modules, it's just too easy to sneak around those boundaries. Eventually, they can become ginormous and a nightmare to maintain.
 
-### Story Time!
+## Story Time!
 
 Just imagine for a second that you are a very healthy eater and your goal is to lean up by the summer time. You've bought your bikini, you've bought your carrots--or whatever it is that healthy people buy--and you're ready to rock. There's just one problem. Your best friend is your roommate. The same best friend that bakes pastries and desserts for a living.
 
@@ -52,7 +52,7 @@ You and your roommate sharing a house is the equivalent of two independent servi
 
 Software isn't all that different. Our goal should be to set ourselves up to fall into <a href="https://blog.codinghorror.com/falling-into-the-pit-of-success/" rel="nofollow" target="_blank">the pit of success</a>. And, indeed, the next step in the evolution of the monolith was all about slicing up our concerns.
 
-### Divide and Conquer
+## Divide and Conquer
 
 Service-oriented architecture, or SOA, aims to remediate the problem of tightly bound monoliths by breaking them up into smaller chunks, or services, that provide some kind of business functionality.
 
@@ -98,7 +98,7 @@ The important thing to understand here is that the vertical boundaries I'm refer
 
 So, while I'm referring to vertical boundaries and slicing of software and teams, in terms of _infrastructure_ it's quite different, and microservices will tend to be scaled horizontally. I think that distinction can be helpful to understand.
 
-### What does all of this have to do with micro frontends?
+### What does this mean for micro frontends?
 
 Earlier I mentioned that micro frontends are essentially the same as microservices, except that they also include the user interface. Well, _sort of_.
 
