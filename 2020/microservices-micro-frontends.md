@@ -62,7 +62,7 @@ This may sound similar to microservices, and it sort of is, but SOAs tend to foc
 
 ![Traditional vs Microservices Approach](/img/post/microservices/microservices-vs-monolith-white-bg.png)
 
-_NOTE: The traditional approach can come in a variety of forms, but this one is simpler to illustrate._
+_NOTE: Both approaches can come in a variety of forms; this is a basic example for illustration only._
 
 So, microservices make crossing boundaries a bit more difficult to do, because, when implemented correctly, they act as separate entities that encourage us to stay in our own lane.
 
