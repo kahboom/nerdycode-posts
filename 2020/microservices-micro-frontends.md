@@ -11,8 +11,9 @@ references:
 - {title: 'Micro Frontends', url: 'https://martinfowler.com/articles/micro-frontends.html', note: 'Cam Jackson'}
 - {title: 'Microservices', url: 'https://martinfowler.com/articles/microservices.html', note: 'Martin Fowler'}
 - {title: 'Monolithic vs SOA vs Microservices — How to Choose Your Application Architecture', url: 'https://medium.com/@saad_66516/monolithic-vs-soa-vs-microservices-how-to-choose-your-application-architecture-1a33108d1469', note: 'Saad Arshed'}
-- {title: 'ServiceOrientedAmbiguity', url: 'https://martinfowler.com/bliki/ServiceOrientedAmbiguity.html', note: 'Martin Fowler'}
-- {title: 'Patterns: Service-Oriented Architecture and Web Services', url: 'https://www.redbooks.ibm.com/redbooks/pdfs/sg246303.pdf', note: 'IBM'}
+- {title: 'Patterns: Service-Oriented Architecture and Web Services (PDF)', url: 'https://www.redbooks.ibm.com/redbooks/pdfs/sg246303.pdf', note: 'IBM'}
+- {title: 'Single Responsibility Principle', url: 'https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html', note: 'Robert C. Martin'}
+- {title: 'Service Oriented Ambiguity', url: 'https://martinfowler.com/bliki/ServiceOrientedAmbiguity.html', note: 'Martin Fowler'}
 - {title: 'What Is Service-Oriented Architecture?', url: 'https://medium.com/@SoftwareDevelopmentCommunity/what-is-service-oriented-architecture-fa894d11a7ec', note: 'Software Development Community'}
 - {title: 'Why We Need a New Breed of Hybrid Microservices Platform', url: 'https://dzone.com/articles/why-we-need-a-new-breed-of-hybrid-microservices-pl', note: 'Tal Doron'}
 tags:
@@ -43,13 +44,13 @@ Just imagine for a second that you are a very healthy eater and your goal is to 
 
 You know you're disciplined, but you're a bit worried that smelling freshly baked bread on Sunday mornings and chocolate cake in the evenings is going to throw you off your target. It's just _too easy_.
 
-You might start incorporating some of your friend's less healthy ingredients into your food, and they might start depending on availability of your ingredients around the house for their recipes. I don't want to buy your cakes anymore if you're going to start substituting flour for powdered quinoa. Actually, I maybe don't even want to be your friend anymore.
+You might start incorporating some of your friend's less healthy ingredients into your food, and they might start depending on availability of your ingredients around the house for their recipes. I don't want to buy your cakes anymore if you're going to start substituting flour for powdered quinoa. Actually, I maybe don't even want to be your friend anymore. 😐
 
-But if your best friend lived just across the street, it'd make it a lot less likely that you'd give into temptation. You'd have to actually get dressed and go out of your way to go after that pack of cookies, instead of making do with the healthier snacks you already have at home.
+But if your best friend lived just across the street, it'd make it a lot _less likely_ that you'd give into temptation. You'd have to actually get dressed and go out of your way to go after that pack of cookies, instead of making do with the healthier snacks you already have at home.
 
 You and your roommate sharing a house is the equivalent of two independent services sharing the resources of a monolithic application. Healthy living is your objective, and crafting tasty treats is their objective. Putting the two of you together in a single space is likely to allow bleeding across the boundaries between you, and neither of you will be as effective in reaching your goals.
 
-Software isn't all that different. Our goal should be to set ourselves up for a lower chance of failure. And, indeed, the next step in the evolution of the monolith was all about slicing up our concerns.
+Software isn't all that different. Our goal should be to set ourselves up to fall into <a href="https://blog.codinghorror.com/falling-into-the-pit-of-success/" rel="nofollow" target="_blank">the pit of success</a>. And, indeed, the next step in the evolution of the monolith was all about slicing up our concerns.
 
 ### Divide and Conquer
 
@@ -77,7 +78,7 @@ Well, if we want to apply Separation of Concerns to a monolith, we'll end up wit
 
 But we haven't addressed one of the fundamentals in this system, and that's the _organizational design_. The first principle from SOLID, the **Single Responsibility Principle (SRP)**, states that a class should only have a single responsibility.
 
-Robert Martin, the creator of this principle, later offers a different wording:
+Robert Martin, the creator of this principle, later offers a different wording to make it a bit easier to understand:
 
 >"Gather together the things that change for the same reasons. Separate those things that change for different reasons."
 
@@ -95,7 +96,7 @@ The important thing to understand here is that the vertical boundaries I'm refer
 
 >**Conway's Law**: _Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure_
 
-So, while I'm referring to vertical boundaries and slicing of software and teams, in terms of infrastructure it's quite different, and microservices will tend to be scaled horizontally. IMHO, I think that distinction is helpful to understand.
+So, while I'm referring to vertical boundaries and slicing of software and teams, in terms of _infrastructure_ it's quite different, and microservices will tend to be scaled horizontally. I think that distinction can be helpful to understand.
 
 ### What does all of this have to do with micro frontends?
 
@@ -109,10 +110,8 @@ That it was broken into itty bitty pieces before they got there is something the
 
 Ensuring that teams working independently with potentially different technologies and processes still results in a single cohesive product is, indeed, one of the challenges specific to working with micro frontends.
 
-### Discussion
+## Conclusion
 
 We want to make it more difficult for us to step on each other's toes, but we also need to prevent ourselves from over-engineering and creating completely fragmented systems or siloed teams. It's a balance that needs to be reevaluated continuously.
 
-Consider starting out with a monolith that follows the principles of SOLID and Separation of Concerns.
-
-You can always grow the system into independent units that can be deployed on their own, and eventually switch to micro frontends. As we've learned in the past, a simpler system will almost always be easier to work with.
+Consider starting out with a monolith that follows the principles of SOLID and Separation of Concerns. You can always grow the system into independent units that can be deployed on their own, and eventually switch to micro frontends. As we've learned in the past, a simpler system will almost always be easier to work with.
