@@ -44,11 +44,13 @@ Just imagine for a second that you are a very healthy eater and your goal is to 
 
 You know you're disciplined, but you're a bit worried that smelling freshly baked bread on Sunday mornings and chocolate cake in the evenings is going to throw you off your target. It's just _too easy_.
 
-You might start incorporating some of your friend's less healthy ingredients into your food, and they might start depending on availability of your ingredients around the house for their recipes. I don't want to buy your cakes anymore if you're going to start substituting flour for powdered quinoa. Actually, I maybe don't even want to be your friend anymore. 😐
+You might start incorporating some of your friend's less healthy ingredients into your food, and they might start using _your_ ingredients around the house for _their_ recipes. Nobody is going to want to buy your best friend's cakes if they're going to start substituting flour for powdered quinoa. Actually, I'm not sure I even want to be friends with them anymore. 😐
 
 But if your best friend lived just across the street, it'd make it a lot _less likely_ that you'd give into temptation. You'd have to actually get dressed and go out of your way to go after that pack of cookies, instead of making do with the healthier snacks you already have at home.
 
-You and your roommate sharing a house is the equivalent of two independent services sharing the resources of a monolithic application. Healthy living is your objective, and crafting tasty treats is their objective. Putting the two of you together in a single space is likely to allow bleeding across the boundaries between you, and neither of you will be as effective in reaching your goals.
+You and your roommate sharing a house is the equivalent of two independent services sharing the resources of a monolithic application.
+
+Healthy living is _your_ objective, and crafting tasty treats is _their_ objective. Putting the two of you together in a single space is likely to allow bleeding across the boundaries between the both of you, and _neither_ of you will be as effective in reaching your goals.
 
 Software isn't all that different. Our goal should be to set ourselves up to fall into <a href="https://blog.codinghorror.com/falling-into-the-pit-of-success/" rel="nofollow" target="_blank">the pit of success</a>. And, indeed, the next step in the evolution of the monolith was all about slicing up our concerns.
 
@@ -94,7 +96,7 @@ This also means that each system will have its own data store, if it needs one a
 
 The important thing to understand here is that the vertical boundaries I'm referring to are directly related to the business concerns. If those business concerns are to reflect Conway's Law, then it stands to reason that it is also representative of the organizational structure as well.
 
->**Conway's Law**: _Any organization that designs a system (defined more broadly here than just information systems) will inevitably produce a design whose structure is a copy of the organization's communication structure_
+>**Conway's Law**: _Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure._
 
 So, while I'm referring to vertical boundaries and slicing of software and teams, in terms of _infrastructure_ it's quite different, and microservices will tend to be scaled horizontally. I think that distinction can be helpful to understand.
 
@@ -104,9 +106,7 @@ Earlier I mentioned that micro frontends are essentially the same as microservic
 
 The idea of micro frontends is that your application is logically broken down into smaller, independent parts that are organized by team or functionality and later composed into a single UI.
 
-How you choose to integrate these systems to get from pieces to an entire whole can vary. Following that, the final result doesn't change: from the user's perspective there is only one single, seamless, user interface.
-
-That it was broken into itty bitty pieces before they got there is something they just don't care about.
+How you choose to integrate these systems to get from pieces to an entire whole can vary. Following that, the final result doesn't change: from the user's perspective there is only one user interface. That it was broken into itty bitty pieces before they got there is something they _just don't care about_.
 
 Ensuring that teams working independently with potentially different technologies and processes still results in a single cohesive product is, indeed, one of the challenges specific to working with micro frontends.
 
