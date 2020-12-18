@@ -58,7 +58,7 @@ Software isn't all that different. Our goal should be to set ourselves up to fal
 
 Service-oriented architecture, or SOA, aims to remediate the problem of tightly bound monoliths by breaking them up into smaller chunks, or services, that provide some kind of business functionality.
 
-This also allowed services to use different languages and created a more polyglot world for programmers. SOA is commonly associated with web services, like SOAP, and that's because web services are commonly how SOA is implemented so that the services can communicate with one another.
+This, in turn, allowed services to use different languages, and created a more polyglot world for programmers. SOA is commonly associated with web services, like SOAP. That's because web services are commonly the way SOAs are implemented, so that the services can communicate with one another.
 
 This may sound similar to microservices, and it sort of is, but SOAs tend to focus on a _common_ communication layer across the system, by using something like an **enterprise service bus (or ESB)**. SOAs follow the "share-as-much-as-possible" approach, while microservices follow the "share-as-little-as-possible" approach.
 
