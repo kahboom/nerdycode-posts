@@ -10,13 +10,11 @@ tags:
   - web-dev
 ---
 
->I decided to write a blog about microfrontends, and, before I knew it, it turned into an essay. I originally wrote 
-> this post in 2020, but because it was so long and the app wasn't as nice as I wanted, I decided not to publish it. As part of my "post it anyway" goal of next year, I'm now posting it in hopes it helps someone.
+>I decided to write a blog about microfrontends, and, before I knew it, it turned into an essay. I originally wrote this post in 2020, but because it was so long and the app wasn't as nice as I wanted, I decided not to publish it. As part of my "post it anyway" goal of next year, I'm now posting it in hopes it helps someone.
 
 In this post, we'll be discussing micro frontends and the benefits (and tradeoffs) they can provide, as well as decision-making throughout the design. We'll build a set of small, simple apps that are then composed into a single UI, by using the micro frontends approach.
 
-This post (and its code) was heavily inspired by Michael Geer's [Microfrontends in Action](https://www.manning.
-com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb) and simply puts into practice many of the concepts 
+This post (and its code) was heavily inspired by Michael Geer's [Microfrontends in Action](https://www.manning. com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb) and simply puts into practice many of the concepts 
 discussed in it.
 
 ## Intro
@@ -80,7 +78,7 @@ The parent app will need an `index.html` file. Each of the other apps will have 
 
 Assuming first we are using web components for the app, here's an example controller for the the `details` app:
 
-```
+```js
 const templateDetailChunLi = character => {  
   return `  
 <div class="detail_layout">
@@ -137,7 +135,7 @@ What device are they using to access your app? How important is SEO?
 
 Here is the `<script>` tag which goes at the bottom of our parent app's `index.html` file, where we are defining the routes and monitoring for changes to the URL, updating the component as necessary:
 
-```
+```html
 <script type="module">  
   const appContent = document.querySelector("#app-content");  
   
@@ -180,7 +178,7 @@ We've not yet implemented the `updatePageComponent` function, which is part of h
 
 In the body, we can then reference the custom element:
 
-```
+```html
 <div id="app">
   <div class="logo">
     <a href="/"><img width="250" src="/img/street-fighter-logo.png"/></a>
@@ -241,7 +239,7 @@ We want this app to be interactive and snappy when toggling between characters. 
 
 Our function might look something like this:
 
-```
+```js
 function findComponentName(pathname) {
     return routes[pathname];
   }
@@ -311,7 +309,7 @@ It really depends on what you're trying to achieve. For our app, I've decided to
 
 In the `characters` controller we add an event listener to the "Select Character" confirmation button and add/remove a CSS class to it which shows a little animation when selecting the character.
 
-```
+```js
 const selectBtn = document.querySelector('controls-select');  
 const characterEl = document.querySelector('.detail_character');  
   
