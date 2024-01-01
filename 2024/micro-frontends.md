@@ -129,9 +129,7 @@ We need to devise a way for our users to get from one page to another, specifica
 
 We can alternatively use a meta-framework like single-spa, but I won't be covering that here.
 
-In our case, we'll just be using client-side routing and giving those routes to the parent app (shell app). We want 
-one route for each character. This is one area where knowing your user and requirements ahead of time can be helpful.
-What device are they using to access your app? How important is SEO?
+In our case, we'll just be using client-side routing and giving those routes to the parent app (shell app). We want one route for each character. This is one area where knowing your user and requirements ahead of time can be helpful. What device are they using to access your app? How important is SEO?
 
 Here is the `<script>` tag which goes at the bottom of our parent app's `index.html` file, where we are defining the routes and monitoring for changes to the URL, updating the component as necessary:
 
