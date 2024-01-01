@@ -1,6 +1,6 @@
 ---
 title: Approaches in Microfrontends
-eleventyExcludeFromCollections: true
+eleventyExcludeFromCollections: false
 date: 2024-01-01
 permalink: "/micro-frontends/"
 dynamicPermalink: false
