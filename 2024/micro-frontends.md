@@ -14,8 +14,7 @@ tags:
 
 In this post, we'll be discussing micro frontends and the benefits (and tradeoffs) they can provide, as well as decision-making throughout the design. We'll build a set of small, simple apps that are then composed into a single UI, by using the micro frontends approach.
 
-This post (and its code) was heavily inspired by Michael Geer's [Microfrontends in Action](https://www.manning. com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb) and simply puts into practice many of the concepts 
-discussed in it.
+This post (and its code) was heavily inspired by Michael Geer's [Microfrontends in Action](https://www.manning.com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb) and simply puts into practice many of the concepts discussed in it.
 
 ## Intro
 
@@ -370,9 +369,9 @@ Good luck.
 ## Further Reading
 
 - [Microfrontends in Action](https://www.manning.com/books/micro-frontends-in-action?a_aid=mfia&a_bid=5f09fdeb), Michael Geer
-- [https://martinfowler.com/articles/micro-frontends.html](https://martinfowler.com/articles/micro-frontends.html)
-- https://martinfowler.com/articles/microservice-trade-offs.html
-- [https://dev.to/luistak/cross-micro-frontends-communication-30m3](https://dev.to/luistak/cross-micro-frontends-communication-30m3)
-- [https://micro-frontends.org/](https://micro-frontends.org/)
-- [https://medium.com/swlh/micro-front-end-architecture-at-enterprise-scale-updated-july-2020-9159a4e0cc49](https://medium.com/swlh/micro-front-end-architecture-at-enterprise-scale-updated-july-2020-9159a4e0cc49)
+- [Martin Fowler: Micro-Frontends](https://martinfowler.com/articles/micro-frontends.html)
+- [Martin Fowler: Microservice Trade-offs](https://martinfowler.com/articles/microservice-trade-offs.html)
+- [Micro-Frontends Communications](https://dev.to/luistak/cross-micro-frontends-communication-30m3)
+- [micro-frontends.org](https://micro-frontends.org/)
+- [Micro-frontend Architecture at Enterprise Scale](https://medium.com/swlh/micro-front-end-architecture-at-enterprise-scale-updated-july-2020-9159a4e0cc49)
 
